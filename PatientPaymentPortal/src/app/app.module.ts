@@ -8,6 +8,7 @@ import { PaymentAutoComponent } from './payment-auto/payment-auto.component';
 import {RouterModule} from '@angular/router';
 import {appRoute} from './routes';
 import { LoginComponent } from './login/login.component';
+import { PatientComponent } from './patient/patient.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     PaymentNowComponent,
     PaymentAutoComponent,
-    LoginComponent
+    LoginComponent,
+    PatientComponent
   ],
   imports: [
     BrowserModule,
