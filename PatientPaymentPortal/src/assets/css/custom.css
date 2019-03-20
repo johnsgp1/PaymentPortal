@@ -1,0 +1,217 @@
+.af-name-head {
+    font-size: 18px;
+    text-align: right;
+}
+.af-name-right{
+    font-size: 14px;
+    /* text-align: left; */
+}
+ .Pagerow {
+  margin-left: -12px;  
+  margin-right: -12px; 
+}
+.div-body-width{
+          width: 450px; 
+           
+   } 
+   .paddingDivRight{
+       padding:0px;
+       /* padding-right:30px; */
+   }
+ .paddingDivLeft{
+       padding:0px;
+       padding-left: 30px;
+   }
+.tmplLoading{
+    position: relative;
+    top:150px;
+    left: 250px;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 200px;
+    max-width: 400px;
+    height: 400px;
+}
+.tmplLoading2{
+    position: relative;
+    top:100px;
+    left: 250px;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 200px;
+    max-width: 400px;
+    height: 300px;
+}
+#pagercontainer {
+    background: whitesmoke;
+    padding-right: 0px;
+}
+#pagercontainer > #pageInfo {
+    padding-top: 3px;
+}
+.aFtable-responsive {
+    width: 100%;
+    margin-bottom: 0px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #DDD;
+    -webkit-overflow-scrolling: touch;
+}
+@media only screen and (max-width:902px)
+{
+ .paddingDivRight{
+       padding:0px;padding-right:10px;
+   }
+ .paddingDivLeft{
+       padding:0px;padding-left: 10px;
+   }
+ }
+@media only screen and (max-width:768px)
+{
+  .paddingDivRight{
+       padding:0px;
+   }
+ .paddingDivLeft{
+       padding:0px;
+   }
+}
+
+@media only screen and (max-width:600px)
+{
+    .af-name-head{
+         font-size: 14px;
+        
+    }
+    .af-name-right{
+         font-size: 12px;
+        
+    }
+}
+
+@media only screen and (max-width:480px)
+{
+     .af-name-head{
+         font-size: 13px;
+       
+    }
+        .af-name-right{
+         font-size: 11px;
+        
+    }
+   /* .profile-info-value{
+       
+         padding-left: 1px; 
+}*/
+ .Pagerow {
+ margin-left: -15px; 
+ margin-right: -35px; 
+}
+}
+.div-name-width{
+          width: 160px; 
+           
+       }  
+ 
+  .div-value-width{
+           width: 150px; 
+           
+   }      
+
+.cshr-margin{
+ 
+ border-top: 1px solid rgba(71, 181, 202, 0.56);
+}
+.h4mamarginBottom{
+    margin-bottom: -9px;
+    /* margin-top: 2px; */
+}
+.aF-editable-black {
+        border: 0;
+        border-bottom: 1px dashed #BBB ;
+         font-style: normal;
+        cursor:pointer;
+        font-weight: normal;
+        color:#393939;
+    }
+     .aF-radio-font{
+        font-family: 'Open Sans' !important;
+        font-size: 13px !important;
+        color: #393939 !important;
+        line-height: 1.5;
+    }
+        .aF-editable-purple {
+            border: 0;
+        border-bottom: 1px dashed #BBB ;
+        font-style: italic;
+        cursor:pointer;
+        font-weight: normal;
+        color:purple;
+    }
+    
+      .aF-editable-red {
+            border: 0;
+        border-bottom: 1px dashed #BBB ;
+        font-style: italic;
+        cursor:pointer;
+        font-weight: normal;
+        color:#DD1144;
+    }
+    .aF-editable-black:hover {
+        border: 0;
+        border-bottom: 1px dashed #BBB ;
+        font-style: normal;
+        cursor:pointer;
+        font-weight: normal;
+        color:#0088cc;
+    }
+
+    .aF-editable-red:hover {
+        border: 0;
+        border-bottom: 1px dashed #BBB ;
+        font-style: italic;
+        cursor:pointer;
+        font-weight: normal;
+        color:#0088cc;
+    }
+    
+    .aF-editable-purple:hover {
+        border: 0;
+        border-bottom: 1px dashed #BBB ;
+        font-style: italic;
+        cursor:pointer;
+        font-weight: normal;
+        color:#0088cc;
+    }
+    .spanComma{
+    border-bottom: 1px solid #fff;
+    color: #666;
+    content: ",";
+    display: inline;
+    margin-left: 1px;
+    margin-right: 3px;
+    }
+    
+.light-loginCustom{
+background-color: #dfe0e2;
+}
+.light-login1 {
+background: #dfe0e2 !important; 
+}
+.text-size {
+height: 30px !important; 
+width:170px !important;
+}
+.loginPadding{
+    padding: 6px; 
+  background-color: #394557; 
+}
+.bodycontainer { max-height: 150px; width: 100%; margin: 0; overflow-y: auto; }
+.table-scrollable { margin: 0; padding: 0; }
+
+@media (min-width: 768px)
+{
+    .bootbox-width {
+   width: 400px; 
+}
+}

@@ -1,0 +1,189 @@
+
+/* 
+    Created on : May 16, 2014, 7:16:20 PM
+    Author     : Suresh
+*/
+
+
+  
+    .outer-div{
+        border: 1px solid #dcebf7;
+    }
+  
+    .div-name{
+           float:left;
+           text-align: right;
+           padding: 6px 10px 6px 10px;
+           width:150px;
+           background-color: #edf3f4; 
+           color:#336199; 
+           line-height: 1.9;
+           
+       }  
+       
+       .div-name-width{
+           width:150px;
+       } 
+       
+       .div-name-border-top  {
+            border-top: 1px solid #f7fbff;
+            
+       }
+       .div-value{
+          
+           line-height: 1.9;
+           padding-top: 5px;
+           margin-left: 160px; 
+           margin-right: 20px;
+       } 
+       .div-value-border-top  {
+           border-top: 1px dotted #dcebf7;
+       }
+       
+   
+    .summary-row-name{
+          
+            float:left;
+           font-size: 12px;
+           font-weight: normal;
+           line-height: 1;
+           color: #4c8fbd;
+            width:130px !important;
+            padding-top: 6px;
+       } 
+       
+     .summary-row-name1{
+          
+            float:left;
+           font-size: 12px;
+           font-weight: normal;
+           line-height: 1;
+           color: #4c8fbd;
+           width:180px !important;
+           padding:0;
+       } 
+      
+       
+       .summary-row-paging{
+          
+           font-size: 10px;
+           font-weight: normal;
+           line-height: 1;
+           color: #4c8fbd;
+  
+       } 
+       
+     .summary-heading{
+          
+           background-color: #f9f9f9 !important;
+           height: 35px;
+           border-top:0 !important;
+           padding: 5px 0px 7px 0px!important;
+           border-bottom: solid 1px #DDD;
+       } 
+       
+       .summary-align{
+           text-align: center;
+       }
+       
+       
+       .summary-select{
+          
+          height: 20px;
+          padding:0;
+       }
+       .summary-page{
+           padding:2px 6px !important;
+       }
+       .summary-paging{
+        background-color: #f9f9f9 !important;
+       }
+        .div-padding-left{
+          padding-left:50px !important;
+         }  
+         
+   @media only screen and (max-width: 480px)
+   {
+       .div-name{
+           width:135px;
+       }  
+       .div-value{
+           margin-left: 170px; 
+       } 
+   }
+   @media only screen and (max-width: 480px) //for extra small device design    
+   {.div-padding-left{
+          padding-left:20px !important;
+     } 
+   }
+   
+  
+    @media only screen and (min-width: 480px) //for large screen design
+    {.aFalign-class {
+        text-align: left;
+    }}  
+    
+    @media only screen and (max-width: 480px) //for extra small device design
+    {.aFalign-class {
+        text-align: right;
+        padding: 6px 0 6px 10px;
+    }}
+    
+    @media only screen and (min-width: 480px) //for large screen design
+    {.aFpaddingtop {
+         padding:0px !important;
+    }}  
+    
+    
+    
+    @media only screen and (max-width: 480px) //for extra small device design
+    {.aFpaddingtop {
+    padding: 6px 0px 0px 0px !important;
+    }}
+    
+    
+    @media only screen and (max-width: 865px) //for extra small device design
+    {.div-height {
+        height: 70 px;
+    
+    }}
+
+    
+    @media only screen and (max-width: 480px) //for extra small device design
+    {
+        
+    .summary-row-name1{
+        padding-top:4px;
+    }
+    .summary-select{  
+          height: 15px !important;
+          padding-top:4px;
+    }
+    
+    }
+    
+     
+  /* @media only screen and (min-width: 480px) //for large screen design
+    {
+        #accordion0 { display: none; } 
+        #accordion1 { display: none; } 
+        #accordion2 { display: none; } 
+        #accordion3 { display: none; } 
+        #accordion4 { display: none; } 
+        #accordion5 { display: none; } 
+    }  
+    
+ @media only screen and (max-width: 480px) //for extra small device design
+     {
+        #accordion0 { display: block; } 
+        #accordion1 { display: block; } 
+        #accordion2 { display: block; } 
+        #accordion3 { display: block; } 
+        #accordion4 { display: block; } 
+        #accordion5 { display: block; } 
+    }  */
+   
+  //  @media only screen and (max-width:480px){.ace-settings-container,body.breadcrumbs-fixed .ace-settings-container{top:65px}}
+  
+
+

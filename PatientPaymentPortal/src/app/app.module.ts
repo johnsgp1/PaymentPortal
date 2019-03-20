@@ -2,13 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { PaymentNowComponent } from './payment-now/payment-now.component';
+import { PaymentAutoComponent } from './payment-auto/payment-auto.component';
+import {RouterModule} from '@angular/router';
+import {appRoute} from './routes';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    PaymentNowComponent,
+    PaymentAutoComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoute)
+
   ],
   providers: [],
   bootstrap: [AppComponent]
