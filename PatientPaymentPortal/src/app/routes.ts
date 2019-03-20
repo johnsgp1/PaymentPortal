@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PatientComponent } from './patient/patient.component';
 import { PaymentNowComponent } from './payment-now/payment-now.component';
+import { PaymentAutoComponent } from './payment-auto/payment-auto.component';
 export const appRoute:Routes=[
     {path:'login',component:LoginComponent ,pathMatch:'full'},
     //{path:'home',component:HomeComponent ,pathMatch:'full'},
@@ -22,7 +23,7 @@ export const appRoute:Routes=[
         {
             outlet:'Home',
             path:'PaymentAuto',
-            component:PaymentNowComponent
+            component:PaymentAutoComponent
         }
     ]
 }

@@ -58,7 +58,7 @@
         </div>
       </div>
   </div>
-<form novalidate="novalidate" id="MyFormPanel" data-componentid="MyFormPanel" class="x-formpanel x-panel x-container x-component x-noborder-trbl col-large-offSet-1 smallSixColumn xsmallTwelveColumn mediumFourColumn col-medium-offSet-1 largeFourColumn x-header-position-top x-managed-borders x-layout-auto-item pull-right" data-xid="42">
+<form novalidate="novalidate" #UserLoginForm="ngForm" (ngSubmit)="GetLoginService(UserLoginForm)" id="MyFormPanel" data-componentid="MyFormPanel" class="x-formpanel x-panel x-container x-component x-noborder-trbl col-large-offSet-1 smallSixColumn xsmallTwelveColumn mediumFourColumn col-medium-offSet-1 largeFourColumn x-header-position-top x-managed-borders x-layout-auto-item pull-right" data-xid="42">
   <div class="x-body-wrap-el x-formpanel-body-wrap-el x-panel-body-wrap-el x-container-body-wrap-el x-component-body-wrap-el" id="ext-element-100">
   <div class="x-body-el x-formpanel-body-el x-panel-body-el x-container-body-el x-component-body-el x-layout-auto x-noborder-trbl" id="ext-element-101" style="border-width: 0px;">
       <div data-componentid="MyFormPanel_container" style="padding-bottom: 5px;" class="x-container x-component BottomBorder x-layout-auto-item" data-xid="43" id="MyFormPanel_container">
@@ -131,15 +131,15 @@
           
           <div class="form-group">
               <label for="Last"><b>MRN:</b></label>
-            <input type="text" class="form-control" id="LastName" autocomplete="off">
+            <input type="text" class="form-control" id="mrn" autocomplete="off">
           </div>
         <div class="form-group">
             <label for="Address"><b>Date of birth:</b></label>
-            <input type="text" class="form-control" id="Address" autocomplete="off">
+            <input type="text" class="form-control" id="DOB" autocomplete="off">
           </div>
           <div class="form-group">
               <label for="email"><b>Email:</b></label>
-            <input type="email" class="form-control" id="pEmailwd" autocomplete="off">
+            <input type="email" class="form-control" id="email" autocomplete="off">
           </div>  
          </div>
      
@@ -172,7 +172,7 @@
                   <div class="x-badge-el"></div>
                   <button onfocus="return Ext.doEv(this, event);" onblur="return Ext.doEv(this, event);" class="x-button-el" type="button" id="ext-element-149" aria-describedby="ext-element-152" data-componentid="MyFormPanel_button_SignUp"></button>
               </div>
-              <div onclick="return Ext.doEv(this, event);" data-componentid="MyFormPanel_button_LogIn" class="x-component x-button x-has-text action noprint x-icon-align-left x-arrow-align-right x-button-action x-component-action x-layout-box-item x-layout-hbox-item" data-xid="64" id="MyFormPanel_button_LogIn">
+              <div  data-componentid="MyFormPanel_button_LogIn" class="x-component x-button x-has-text action noprint x-icon-align-left x-arrow-align-right x-button-action x-component-action x-layout-box-item x-layout-hbox-item" data-xid="64" id="MyFormPanel_button_LogIn">
                   <div class="x-inner-el" id="ext-element-156"><div class="x-body-el" id="ext-element-155"><div class="x-icon-el x-font-icon" id="ext-element-158"></div>
                           <div class="x-text-el" id="ext-element-157">Log In</div>
 
@@ -185,7 +185,7 @@
                   <div class="x-badge-el">
 
                   </div>
-                  <button onfocus="return Ext.doEv(this, event);" onblur="return Ext.doEv(this, event);" class="x-button-el" type="button" id="ext-element-154" aria-describedby="ext-element-157" data-componentid="MyFormPanel_button_LogIn">
+                  <button (click)="this.GetLoginService($event)"  class="x-button-el" type="button" id="ext-element-154" aria-describedby="ext-element-157" data-componentid="MyFormPanel_button_LogIn">
 
                   </button>
               </div>
