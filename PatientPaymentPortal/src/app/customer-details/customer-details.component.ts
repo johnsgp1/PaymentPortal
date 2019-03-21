@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-customer-details',
   templateUrl: './customer-details.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
-
+  goToResponse(ev:any){
+  this.router.navigate([
+    '/home',{outlets:{Home:['Response']}}
+  ])
+  }
 }

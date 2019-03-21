@@ -1,3 +1,556 @@
-<p>
-  payment-response works!
-</p>
+<!--
+<div class="card" style="height:auto;width: 570px;margin-left: 450px;margin-top: 50px;">
+        <div class="row" style="height: 50px;">
+            <h3 class="header smaller lighter Blue"><font class="blue" style="font-size: 28px;">									
+                <b>Summary</b></font>
+									</h3>  
+    </div>
+    <div class="row" >
+      <h3 class="header smaller lighter green">
+										<i class="ace-icon fa fa-heart red"></i>
+<b>Dallas RenalGroup, PA</b>
+									</h3>  
+    </div>
+   <div class="row" >
+       <div class="row">
+           <div class="col-xs-12 col-sm-5" style="width: 300px;">
+               <div style="font-size: 16Px;"><label class="" style="font-size: 18Px;"><b>Patient</b></label><label style="margin-left: 10px;font-size: 18Px;">:</label><label style="margin-left: 12px;font-size: 18Px;">Test Patient Test Patient</label></div>
+               <div style="font-size: 16Px;"><label class="" style="font-size: 18Px;"><b>MRN</b></label><label style="margin-left: 27px;font-size: 18Px;">:</label><label style="margin-left: 12px;font-size: 18Px;">1345</label></div>
+               <div style="font-size: 16Px;"><label class="" style="font-size: 18Px;"><b>Email</b></label><label style="margin-left: 22px;font-size: 18Px;">:</label><label style="margin-left: 12px;font-size: 18Px;">Test@gmail.com</label></div>
+            </div> 
+           <div class="col-xs-12 col-sm-5"><div style="font-size: 16Px;"><label class="" style="font-size: 16Px;"><b>MRN</b></label><label style="margin-left: 25px;font-size: 18Px;">:</label><label style="margin-left: 25px;font-size: 18Px;">1345</label></div></div>
+           <div class="col-xs-12 col-sm-5"><div style="font-size: 16Px;"><label class="" style="font-size: 16Px;"><b>Email</b></label><label style="margin-left: 25px;font-size: 18Px;">:</label><label style="margin-left: 25px;font-size: 18Px;">Test@gmail.com</label></div></div>
+           <div class="col-xs-12 col-sm-5"><div style="font-size: 16Px;"><label class="" style="font-size: 18Px;"><b>Phone</b></label><label style="margin-left: 18px;font-size: 18Px;">:</label><label style="margin-left: 12px;font-size: 18Px;">(987)456-3214</label></div>
+           <div style="font-size: 16Px;"><label class="" style="font-size: 18Px;"><b>Balance</b></label><label style="margin-left: 8px;font-size: 18Px;">:</label><label style="margin-left: 12px;font-size: 18Px;">$50</label></div>
+           </div>
+           <div class="col-xs-12 col-sm-5"></div>
+            <div><label class="blue">Balance:
+                </label> $100</div>
+        </div>
+    </div>
+    <div class="row" style="height: 320px;">
+        <h3 class="header smaller lighter black">
+										<i class="ace-icon fa fa-credit-card"></i>
+                                                                                <b>Payment Summary</b>
+									</h3> 
+        <div>
+            <h4 style="margin-top: 30px;margin-bottom: 10px;" class="smaller lighter green"><i class="ace-icon fa fa fa-check"></i> <b>Payment Approved</b></h4>
+            <h4 style="margin-top: 10px;margin-bottom: 10px;">Your payment for $50 has been successfully processed..</h4>
+            <h4 style="margin-top: 20px;margin-bottom: 10px;"><b>Payment Method</b></h4>
+            <div style="margin-left: 30px;">
+            <h4 style="margin-top: 10px;margin-bottom: 10px;">Card ending in 111(Expiry-11/21)</h4>
+            <h4 style="margin-top: 10px;margin-bottom: 10px;">Date:February 12,2019 04:12pm</h4>
+            <h4 style="margin-top: 10px;margin-bottom: 10px;">Auth Code:0098787600</h4>
+            <h4 style="margin-top: 10px;margin-bottom: 10px;">Response:code(00)</h4>
+            </div>
+            <h4 style="margin-top: 20px;margin-bottom: 10px;">Your receipt will be email to test@gmail.com</h4>
+            <h5 style="margin-top: 10px;margin-bottom: 10px;"><b>Next payment of $50 will be charged to this card on 03/02/2019</b></h5>
+            
+            </div>
+        
+   
+    </div>
+    
+    <div class="row" style="margin-top: 60px;">
+        
+        <div class="col-xs-12 col-sm-6" style="width: 500px;">
+
+            <div class="" style="padding-bottom: 10px;">
+
+            
+            <div id="divRoundsBtnGroup" align="right" style="height: 40px;">
+                        <div id="blinkAll"></div>
+                        
+                        <button id="btnprintReceipt" type="button" class="btn  btn-success right-align" style="left: 50px;"><i class="ace-icon fa fa-times"></i> Print Receipt</button>
+                        
+                    </div>
+            </div>								
+        </div>
+
+    
+    </div>
+</div>-->
+
+<div>
+  <form novalidate="novalidate" id="FormPatientPayment" data-componentid="FormPatientPayment" class="x-formpanel x-panel x-container x-component x-noborder-trbl col-large-offSet-3 col-medium-offSet-3 col-small-offSet-1 smallTenColumn xsmallTwelveColumn mediumSixColumn largeSixColumn x-header-position-top x-managed-borders x-layout-auto-item" data-xid="42">
+      <div class="x-body-wrap-el x-formpanel-body-wrap-el x-panel-body-wrap-el x-container-body-wrap-el x-component-body-wrap-el" id="ext-element-100">
+          <div class="x-body-el x-formpanel-body-el x-panel-body-el x-container-body-el x-component-body-el x-layout-auto x-noborder-trbl" id="printDiv" style="border-width: 0px;padding-bottom: 10px;">
+              <div id="ValidationSummary" data-componentid="ValidationSummary" class="x-container x-component x-hidden x-hidden-display ErrorBox x-container-ErrorBox x-component-ErrorBox x-layout-auto-item" data-xid="43">
+                  <div class="x-body-el x-container-body-el x-component-body-el x-layout-auto x-container-ErrorBox-body-el x-component-ErrorBox-body-el" id="ext-element-102"></div>
+                  <div id="ext-element-103">
+
+                  </div>
+
+              </div>
+              <div id="printDiv1">
+              <div class="x-unselectable x-paneltitle x-component x-text-align-left x-icon-align-left x-horizontal x-layout-auto-item" id="FormPatientPayment_paneltitle" data-componentid="FormPatientPayment_paneltitle" data-xid="44" data-gtm-vis-first-on-screen-8438944_47="2815" data-gtm-vis-total-visible-time-8438944_47="100" data-gtm-vis-has-fired-8438944_47="1">
+                  <div class="x-body-el" id="ext-element-104"><div class="x-icon-el x-font-icon" id="ext-element-105"></div>
+<!--                        <div class="x-text-el" id="ext-element-106" data-title="Patient Information">Patient Payment Information</div></div>-->
+                          <div class="x-text-el" id="ext-element-106" data-title="Patient Information" style="font-size: 26px;padding-bottom: 10px;">Payment Summary</div></div>
+              </div>
+              <hr style="margin-bottom: 0px;margin-top: 0px;">
+              <hr style="margin-bottom: 0px;margin-top: 0px;">
+              <div id="FormPatientPayment_PatientPaymentPatientInfoMultiARDataView" data-componentid="FormPatientPayment_PatientPaymentPatientInfoMultiARDataView" class="x-container x-component x-layout-auto-item" data-xid="45">
+                  <div class="x-body-el x-container-body-el x-component-body-el x-layout-auto" id="ext-element-107">
+                      <div class="x-innerhtml" id="ext-element-108">            
+                      </div>
+
+                  </div>
+
+              </div>
+              <h4 style="margin-top: 10px;margin-bottom: 10px;" class="smaller lighter green"><i class="ace-icon fa fa fa-check"></i> <b>Payment Approved</b></h4>
+<label>
+<!--			          <input name="form-field-checkbox" type="checkbox" class="ace">-->
+              <span class="lbl">Your payment to Dallas Renal Group, PA of $150 has been successfully processed..</span>
+                  </label>
+<!--                <h3 class="header smaller green" style="margin-bottom: 0px;">
+                                                      <i class="ace-icon fa fa-heart red"></i>
+                  <b>Dallas RenalGroup, PA</b>
+              </h3> -->
+<!--                <div class="x-no-min-content  x-field x-component x-body-align-start x-label-text-align-left x-labeled  x-label-align-top x-label-align-vertical x-error-target-under im-display-field payment-flow x-field-payment-flow x-component-payment-flow x-layout-auto-item" id="FormPatientPayment_PatientBalance" data-componentid="FormPatientPayment_PatientBalance" data-xid="46">
+                  <label class="x-label-el" id="ext-element-110" for="ext-element-111">
+                      <span class="x-label-text-el" id="ext-element-112"><font style="font-size: 18px;">Patient Balance</font> </span>
+                  </label>          
+                  <div class="" id="ext-element-113">
+                      <label class="price" style="margin-left: 0px;margin-top: 10px;">$ 600.00</label>
+                                              <div class="x-body-el" id="ext-element-109">
+                                                  <label class="x-label" id="ext-element-111">
+                                                      <div class="x-innerhtml">
+                                                         $500 
+                                                      </div>
+                                                  </label>
+                                                  
+                                                      
+                                              </div>
+                      <div class="x-error-el" id="ext-element-114">
+                          <div class="x-error-icon-el x-font-icon" id="ext-element-115">
+
+                          </div>
+                          <div class="x-error-message-el" id="ext-element-116">
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+              </div>-->
+<!--                <label class="x-label-el" id="ext-element-110" for="ext-element-111">
+                      <span class="x-label-text-el" id="ext-element-112"><font style="font-size: 18px;">Patient Details</font> </span>
+                  </label>-->
+              <hr style="margin-top: 0px;margin-bottom: 5px;">
+<!--                <hr style="margin-bottom: 20px;margin-top: 0px;">-->
+                               <label class="x-label-el" id="ext-element-110" for="ext-element-111">
+                  <span class="x-label-text-el" id="ext-element-112"><font style="font-size: 18px;"><b>Patient Information</b></font> </span>
+                  </label>
+<hr style="margin-top: 0px;margin-bottom: 5px;">
+              <div data-componentid="FormPatientPayment_container" class="x-container x-component MultipleFieldsContainer x-layout-auto-item" data-xid="49" id="FormPatientPayment_container" style="height: 50px;">
+                  <div class="x-body-el x-container-body-el x-component-body-el x-layout-box x-align-stretch x-pack-start x-layout-hbox x-horizontal" id="ext-element-141">
+                      <div class="x-no-min-content x-textfield x-field x-component x-body-align-stretch x-label-text-align-left x-labeled x-empty x-required x-label-align-placeholder x-label-align-vertical x-error-target-under x-layout-box-item x-flexed x-label-inside x-layout-hbox-item" data-componentid="FormPatientPayment_PatientFirstName" data-xid="50" id="FormPatientPayment_PatientFirstName" style="flex: 1 1 0%;">
+                          <label class="x-label-el" id="ext-element-110" for="ext-element-111">
+                              <span class="x-label-text-el" id="ext-element-112"  style="font-size: 16px;">Name </span>
+                          </label>
+                          <div class="x-body-wrap-el" id="ext-element-113">
+                              <div class="x-body-el" id="ext-element-109">
+                                  <label class="x-label" id="ext-element-111">
+                                      <div class="x-innerhtml" style="font-size: 16px;">
+                                          <b>Arun Kumar</b> 
+                                      </div>
+                                  </label>
+
+                              </div>
+                              <div class="x-error-el" id="ext-element-114">
+                                  <div class="x-error-icon-el x-font-icon" id="ext-element-115">
+
+                                  </div>
+                                  <div class="x-error-message-el" id="ext-element-116">
+
+                                  </div>
+
+                              </div>
+
+                          </div>                                                        
+                      </div>
+<!--                        <div data-componentid="FormPatientPayment_PatientFirstNamePatientLastNameSpacer" class="x-container x-component x-widthed x-spacer x-layout-box-item x-layout-hbox-item" data-xid="51" id="FormPatientPayment_PatientFirstNamePatientLastNameSpacer" style="width: 24px;">
+                          <div class="x-body-el x-container-body-el x-component-body-el x-layout-auto" id="ext-element-148">
+
+                          </div>
+
+                      </div>-->
+                      <div class="x-no-min-content x-textfield x-field x-component x-body-align-stretch x-label-text-align-left x-labeled x-empty x-required x-label-align-placeholder x-label-align-vertical x-error-target-under x-layout-box-item x-flexed x-label-inside x-layout-hbox-item" data-componentid="FormPatientPayment_PatientLastName" data-xid="52" id="FormPatientPayment_PatientLastName" style="flex: 1 1 0%;">
+                          <label class="x-label-el" id="ext-element-110" for="ext-element-111">
+                              <span class="x-label-text-el" id="ext-element-112"  style="font-size: 16px;">MRN </span>
+                          </label>
+                          <div class="x-body-wrap-el" id="ext-element-113">
+                              <div class="x-body-el" id="ext-element-109">
+                                  <label class="x-label" id="ext-element-111">
+                                      <div class="x-innerhtml" style="font-size: 16px;">
+                                          <b>48575 </b>
+                                      </div>
+                                  </label>
+
+                              </div>
+                              <div class="x-error-el" id="ext-element-114">
+                                  <div class="x-error-icon-el x-font-icon" id="ext-element-115">
+
+                                  </div>
+                                  <div class="x-error-message-el" id="ext-element-116">
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+              <div data-componentid="FormPatientPayment_container" class="x-container x-component MultipleFieldsContainer x-layout-auto-item" data-xid="49" id="FormPatientPayment_container" style="height: 50px;top: 10px;">
+                  <div class="x-body-el x-container-body-el x-component-body-el x-layout-box x-align-stretch x-pack-start x-layout-hbox x-horizontal" id="ext-element-141">
+                      <div class="x-no-min-content x-textfield x-field x-component x-body-align-stretch x-label-text-align-left x-labeled x-empty x-required x-label-align-placeholder x-label-align-vertical x-error-target-under x-layout-box-item x-flexed x-label-inside x-layout-hbox-item" data-componentid="FormPatientPayment_PatientFirstName" data-xid="50" id="FormPatientPayment_PatientFirstName" style="flex: 1 1 0%;">
+                          <label class="x-label-el" id="ext-element-110" for="ext-element-111">
+                              <span class="x-label-text-el" id="ext-element-112"  style="font-size: 16px;">Email </span>
+                          </label>
+                          <div class="x-body-wrap-el" id="ext-element-113">
+                              <div class="x-body-el" id="ext-element-109">
+                                  <label class="x-label" id="ext-element-111">
+                                      <div class="x-innerhtml" style="font-size: 16px;">
+                                          <b>ArunTest@gmail.com</b>
+                                      </div>
+                                  </label>
+
+                              </div>
+                              <div class="x-error-el" id="ext-element-114">
+                                  <div class="x-error-icon-el x-font-icon" id="ext-element-115">
+
+                                  </div>
+                                  <div class="x-error-message-el" id="ext-element-116">
+
+                                  </div>
+
+                              </div>
+
+                          </div>                                                        
+                      </div>
+<!--                        <div data-componentid="FormPatientPayment_PatientFirstNamePatientLastNameSpacer" class="x-container x-component x-widthed x-spacer x-layout-box-item x-layout-hbox-item" data-xid="51" id="FormPatientPayment_PatientFirstNamePatientLastNameSpacer" style="width: 24px;">
+                          <div class="x-body-el x-container-body-el x-component-body-el x-layout-auto" id="ext-element-148">
+
+                          </div>
+
+                      </div>-->
+                      <div class="x-no-min-content x-textfield x-field x-component x-body-align-stretch x-label-text-align-left x-labeled x-empty x-required x-label-align-placeholder x-label-align-vertical x-error-target-under x-layout-box-item x-flexed x-label-inside x-layout-hbox-item" data-componentid="FormPatientPayment_PatientLastName" data-xid="52" id="FormPatientPayment_PatientLastName" style="flex: 1 1 0%;">
+                          <label class="x-label-el" id="ext-element-110" for="ext-element-111">
+                              <span class="x-label-text-el" id="ext-element-112"  style="font-size: 16px;">Balance </span>
+                          </label>
+                          <div class="x-body-wrap-el" id="ext-element-113">
+                              <div class="x-body-el" id="ext-element-109">
+                                  <label class="x-label" id="ext-element-111">
+                                      <div class="x-innerhtml" style="font-size: 16px;">
+                                          <b>$450.00 </b>
+                                      </div>
+                                  </label>
+
+                              </div>
+                              <div class="x-error-el" id="ext-element-114">
+                                  <div class="x-error-icon-el x-font-icon" id="ext-element-115">
+
+                                  </div>
+                                  <div class="x-error-message-el" id="ext-element-116">
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+
+                      </div>
+
+                  </div>
+
+              </div>
+               
+                  
+<!--                               <div data-componentid="FormPatientPayment_container" class="x-container x-component MultipleFieldsContainer x-layout-auto-item" data-xid="49" id="FormPatientPayment_container">
+                  <div class="x-body-el x-container-body-el x-component-body-el x-layout-box x-align-stretch x-pack-start x-layout-hbox x-horizontal" id="ext-element-141">
+                      <div class="x-no-min-content x-textfield x-field x-component x-body-align-stretch x-label-text-align-left x-labeled x-empty x-required x-label-align-placeholder x-label-align-vertical x-error-target-under x-layout-box-item x-flexed x-label-inside x-layout-hbox-item" data-componentid="FormPatientPayment_PatientFirstName" data-xid="50" id="FormPatientPayment_PatientFirstName" style="flex: 1 1 0%;">
+                          <label class="x-label-el" for="ext-element-142" id="ext-element-144" style="transform: translateX(0px) translateY(22px); font-size: 13px;">
+                              <span class="x-label-text-el" id="ext-element-145">Patient First Name</span>
+                          </label>
+                          <div class="x-body-wrap-el">
+                              <div class="x-body-el" id="ext-element-143"><div class="x-input-wrap-el">
+                                      <div class="x-before-input-el" id="ext-element-146">
+                                          
+                                      </div>
+                                      <input tabindex="0"  class="" style="border-right: 0px;border-left: 0px;border-bottom: 0px;border-top:0px;" type="text" placeholder="First Name" id="ext-element-142" maxlength="35" autocomplete="off" autocorrect="off" aria-label="Patient First Name" aria-describedby="ext-element-145" aria-readonly="false" aria-disabled="false" aria-required="true" name="PatientFirstName" data-componentid="FormPatientPayment_PatientFirstName">
+                                      <div class="x-after-input-el" id="ext-element-147">
+                                          
+                                      </div>
+                                          
+                                  </div>
+                                  <div class="x-underline-el">
+                                      
+                                  </div>
+                                      
+                              </div>
+                              <div class="x-error-el">
+                                  <div class="x-error-icon-el x-font-icon">
+                                      
+                                  </div>
+                                  <div class="x-error-message-el">
+                                      
+                                  </div>
+                                      
+                              </div>
+                                  
+                          </div>
+                              
+                      </div>
+                      <div data-componentid="FormPatientPayment_PatientFirstNamePatientLastNameSpacer" class="x-container x-component x-widthed x-spacer x-layout-box-item x-layout-hbox-item" data-xid="51" id="FormPatientPayment_PatientFirstNamePatientLastNameSpacer" style="width: 24px;">
+                          <div class="x-body-el x-container-body-el x-component-body-el x-layout-auto" id="ext-element-148">
+                              
+                          </div>
+                              
+                      </div>
+                      <div class="x-no-min-content x-textfield x-field x-component x-body-align-stretch x-label-text-align-left x-labeled x-empty x-required x-label-align-placeholder x-label-align-vertical x-error-target-under x-layout-box-item x-flexed x-label-inside x-layout-hbox-item" data-componentid="FormPatientPayment_PatientLastName" data-xid="52" id="FormPatientPayment_PatientLastName" style="flex: 1 1 0%;">
+                          <label class="x-label-el" for="ext-element-149" id="ext-element-151" style="transform: translateX(0px) translateY(22px); font-size: 13px;">
+                              <span class="x-label-text-el" id="ext-element-152">Patient Last Name</span>
+                          </label>
+                          <div class="x-body-wrap-el">
+                              <div class="x-body-el" id="ext-element-150">
+                                  <div class="x-input-wrap-el">
+                                      <div class="x-before-input-el" id="ext-element-153">
+                                          
+                                      </div>
+                                      <input tabindex="0"  style="border-right: 0px;border-left: 0px;border-bottom: 0px;border-top:0px;" placeholder="Last Name" class="" type="text" id="ext-element-149" maxlength="60" autocomplete="off" autocorrect="off" aria-label="Patient Last Name" aria-describedby="ext-element-152" aria-readonly="false" aria-disabled="false" aria-required="true" name="PatientLastName" data-componentid="FormPatientPayment_PatientLastName">
+                                      <div class="x-after-input-el" id="ext-element-154">
+                                          
+                                      </div>
+                                          
+                                  </div>
+                                  <div class="x-underline-el">
+                                      
+                                  </div>
+                                      
+                              </div>
+                              <div class="x-error-el">
+                                  <div class="x-error-icon-el x-font-icon"></div>
+                                  <div class="x-error-message-el"></div>
+                                      
+                              </div>
+                                  
+                          </div>
+                              
+                      </div>
+                          
+                  </div>
+                          
+              </div>
+              <div class="x-no-min-content x-textfield x-field x-component x-body-align-stretch x-label-text-align-left x-labeled x-empty x-label-align-placeholder x-label-align-vertical x-error-target-under x-layout-auto-item x-label-inside" data-componentid="FormPatientPayment_PatientMiddleName" data-xid="53" id="FormPatientPayment_PatientMiddleName">
+                  <label class="x-label-el" for="ext-element-155" id="ext-element-157" style="transform: translateX(0px) translateY(20px); font-size: 13px;"><span class="x-label-text-el" id="ext-element-158">Patient Middle</span>
+                  </label>
+                  <div class="x-body-wrap-el">
+                      <div class="x-body-el" id="ext-element-156">
+                          <div class="x-input-wrap-el">
+                              <div class="x-before-input-el" id="ext-element-159">
+                                  
+                              </div>
+                              <input tabindex="0"  class="" placeholder="Address" style="border-right: 0px;border-left: 0px;border-bottom: 0px;border-top:0px;" type="text" id="ext-element-155" maxlength="25" autocomplete="off" autocorrect="off" aria-label="Patient Middle" aria-describedby="ext-element-158" aria-readonly="false" aria-required="false" name="PatientMiddleName" data-componentid="FormPatientPayment_PatientMiddleName">
+                              <div class="x-after-input-el" id="ext-element-160">
+                                  
+                              </div>
+                                  
+                          </div>
+                          <div class="x-underline-el">
+                              
+                          </div>
+                              
+                      </div>
+                      <div class="x-error-el">
+                          <div class="x-error-icon-el x-font-icon">
+                              
+                          </div>
+                          <div class="x-error-message-el">
+                              
+                          </div>
+                              
+                      </div>
+                          
+                  </div>
+                      
+              </div>
+<div class="x-no-min-content x-textfield x-field x-component x-body-align-stretch x-label-text-align-left x-labeled x-empty x-label-align-placeholder x-label-align-vertical x-error-target-under x-layout-auto-item x-label-inside" data-componentid="FormPatientPayment_PatientMiddleName" data-xid="53" id="FormPatientPayment_PatientMiddleName">
+                  <label class="x-label-el" for="ext-element-155" id="ext-element-157" style="transform: translateX(0px) translateY(20px); font-size: 13px;"><span class="x-label-text-el" id="ext-element-158">Patient Middle</span>
+                  </label>
+                  <div class="x-body-wrap-el">
+                      <div class="x-body-el" id="ext-element-156">
+                          <div class="x-input-wrap-el">
+                              <div class="x-before-input-el" id="ext-element-159">
+                                  
+                              </div>
+                              <input tabindex="0"  class="" placeholder="Email" style="border-right: 0px;border-left: 0px;border-bottom: 0px;border-top:0px;" type="text" id="ext-element-155" maxlength="25" autocomplete="off" autocorrect="off" aria-label="Patient Middle" aria-describedby="ext-element-158" aria-readonly="false" aria-required="false" name="PatientMiddleName" data-componentid="FormPatientPayment_PatientMiddleName">
+                              <div class="x-after-input-el" id="ext-element-160">
+                                  
+                              </div>
+                                  
+                          </div>
+                          <div class="x-underline-el">
+                              
+                          </div>
+                              
+                      </div>
+                      <div class="x-error-el">
+                          <div class="x-error-icon-el x-font-icon">
+                              
+                          </div>
+                          <div class="x-error-message-el">
+                              
+                          </div>
+                              
+                      </div>
+                          
+                  </div>
+                      
+              </div>
+<div class="x-no-min-content x-textfield x-field x-component x-body-align-stretch x-label-text-align-left x-labeled x-empty x-label-align-placeholder x-label-align-vertical x-error-target-under x-layout-auto-item x-label-inside" data-componentid="FormPatientPayment_PatientMiddleName" data-xid="53" id="FormPatientPayment_PatientMiddleName">
+                  <label class="x-label-el" for="ext-element-155" id="ext-element-157" style="transform: translateX(0px) translateY(20px); font-size: 13px;"><span class="x-label-text-el" id="ext-element-158">Patient Middle</span>
+                  </label>
+                  <div class="x-body-wrap-el">
+                      <div class="x-body-el" id="ext-element-156">
+                          <div class="x-input-wrap-el">
+                              <div class="x-before-input-el" id="ext-element-159">
+                                  
+                              </div>
+                              <input tabindex="0"  class="" placeholder="Phone" style="border-right: 0px;border-left: 0px;border-bottom: 0px;border-top:0px;" type="text" id="ext-element-155" maxlength="25" autocomplete="off" autocorrect="off" aria-label="Patient Middle" aria-describedby="ext-element-158" aria-readonly="false" aria-required="false" name="PatientMiddleName" data-componentid="FormPatientPayment_PatientMiddleName">
+                              <div class="x-after-input-el" id="ext-element-160">
+                                  
+                              </div>
+                                  
+                          </div>
+                          <div class="x-underline-el">
+                              
+                          </div>
+                              
+                      </div>
+                      <div class="x-error-el">
+                          <div class="x-error-icon-el x-font-icon">
+                              
+                          </div>
+                          <div class="x-error-message-el">
+                              
+                          </div>
+                              
+                      </div>
+                          
+                  </div>
+                      
+              </div>-->
+              <hr style="margin-top: 20px;margin-bottom: 5px;">
+<!--                <hr style="margin-bottom: 20px;margin-top: 0px;">-->
+                               <label class="x-label-el" id="ext-element-110" for="ext-element-111">
+                  <span class="x-label-text-el" id="ext-element-112"><font style="font-size: 18px;"><b>Payment method</b></font> </span>
+                  </label>
+<hr style="margin-top: 0px;margin-bottom: 5px;">
+<div class="" style="margin-left: 25px;">
+                              <div class="row">
+
+                                  <div class="col-xs-12 col-sm-6" style="width: 120px;"><h5 style="margin-left: 5px;"><b>Auth Code</b><label style="margin-left: 23px;">:</label></h5></div>  
+<!--                                    <div class="col-xs-12 col-sm-3" style="width: 150px;"><h5 style="margin-left: 5px;color: #0aa5a1;"><b>46445454545</b></h5></div>-->
+                                  <div class="col-xs-12 col-sm-3" style="width: 150px;"><h5 style="margin-left: 5px;"><b>46445454545</b></h5></div>
+                              </div>
+                              <div class="row">
+
+                                  <div class="col-xs-12 col-sm-6" style="width: 120px;"><h5 style="margin-left: 5px;"><b>Amount</b><label style="margin-left: 40px;">:</label></h5></div>                       
+<!--                                    <div class="col-xs-12 col-sm-3" style="width: 150px;"><h5 style="margin-left: 5px;color: #1e7ce5;"><b>$150</b></h5></div>-->
+                                                                      <div class="col-xs-12 col-sm-3" style="width: 150px;"><h5 style="margin-left: 5px;"><b>$150</b></h5></div>
+                              </div>
+                              <div class="row">
+
+                                  <div class="col-xs-12 col-sm-6" style="width: 120px;"><h5 style="margin-left: 5px;"><b>Date</b><label style="margin-left: 65px;">:</label></h5></div>                       
+                                  <div class="col-xs-12 col-sm-3" style="width: 150px;"><h5 style="margin-left: 5px;"><b>18/03/2019</b></h5></div>
+                              </div>
+                              <div class="row">
+
+                                  <div class="col-xs-12 col-sm-6" style="width: 120px;"><h5 style="margin-left: 5px;"><b>Card Ending</b><label style="margin-left: 15px;">:</label></h5></div>                       
+                                  <div class="col-xs-12 col-sm-3" style="width: 150px;"><h5 style="margin-left: 5px;"><b>***4545</b></h5></div>
+                              </div>
+                              <div class="row">
+
+                                  <div class="col-xs-12 col-sm-6" style="width: 120px;"><h5 style="margin-left: 5px;"><b>Status</b><label style="margin-left: 55px;">:</label></h5></div>                       
+                                  <div class="col-xs-12 col-sm-3" style="width: 150px;"><h5 style="margin-left: 5px;"><b>Success</b></h5></div>
+                              </div>                               
+                          </div>
+<hr style="margin-top: 0px;margin-bottom: 5px;">
+<label>
+<!--			          <input name="form-field-checkbox" type="checkbox" class="ace">-->
+              <span class="lbl">Your receipt will be email to test@gmail.com</span>
+                  </label>
+
+<h5 style="margin-top: 10px;margin-bottom: 10px;"><b>Next payment of $150 will be charged to this card on 14/04/2019</b></h5>
+          </div>
+              <div class="x-no-min-content  x-textfield x-field x-component x-body-align-stretch x-label-text-align-left x-labeled x-required x-label-align-placeholder x-label-align-vertical x-error-target-under x-empty x-layout-auto-item x-label-inside" id="FormPatientPayment_Amount" data-componentid="FormPatientPayment_Amount" data-xid="47">
+                
+<hr style="margin-top: 0px;margin-bottom: 5px;">                   
+<!--                    <div data-componentid="FormPatientPayment_container_4" class="x-container x-component buttonContainer x-layout-auto-item" data-xid="62" id="FormPatientPayment_container_4">
+                      <div class="x-body-el x-container-body-el x-component-body-el x-layout-box x-pack-start x-align-end x-layout-hbox x-horizontal" id="ext-element-182">
+                          <div  data-componentid="FormPatientPayment_button_Next" class="x-component x-button x-has-text action noprint x-icon-align-left x-arrow-align-right x-button-action x-component-action x-layout-box-item x-layout-hbox-item" data-xid="66" id="FormPatientPayment_button_Next">
+                              <div class="x-inner-el" id="ext-element-195">
+                                  <div class="x-body-el" id="ext-element-194"><div class="x-icon-el x-font-icon" id="ext-element-197"></div>
+                                      <div class="x-text-el" id="ext-element-196">Make A Payment</div></div><div class="x-arrow-el x-font-icon"></div></div>
+                              <div class="x-badge-el"></div><button  class="x-button-el" type="button" id="ext-element-193" aria-describedby="ext-element-196" data-componentid="FormPatientPayment_button_Next" href="#PaymentNow"></button>
+                          </div>
+                          <div data-componentid="FormPatientPayment_PatientFirstNamePatientLastNameSpacer" class="x-container x-component x-widthed x-spacer x-layout-box-item x-layout-hbox-item" data-xid="51" id="FormPatientPayment_PatientFirstNamePatientLastNameSpacer" style="width: 24px;">
+                              <div class="x-body-el x-container-body-el x-component-body-el x-layout-auto" id="ext-element-148">
+
+                              </div>
+
+                          </div>
+                          <div  data-componentid="FormPatientPayment_button_Next" class="x-component x-button x-has-text action noprint x-icon-align-left x-arrow-align-right x-button-action x-component-action x-layout-box-item x-layout-hbox-item" data-xid="66" id="FormPatientPayment_button_Next" style="margin-top: 5px;">
+                              <div class="x-inner-el" id="ext-element-195">
+                                  <div class="x-body-el" id="ext-element-194"><div class="x-icon-el x-font-icon" id="ext-element-197"></div>
+                                      <div class="x-text-el" id="ext-element-196">SETUP AUTOPAY</div></div><div class="x-arrow-el x-font-icon"></div></div>
+                              <div class="x-badge-el"></div><button   class="x-button-el" type="button" id="ext-element-194" aria-describedby="ext-element-196" data-componentid="FormPatientPayment_button_Next" ></button>
+                          </div>
+                      </div>
+                  </div>-->
+                  <div style="margin-top: 5px;" id="btnDiv">
+                      <div class="pull-right">
+                                  <div  data-componentid="FormPatientPayment_button_Back" class="hidden x-component x-button x-has-text secondary noprint x-icon-align-left x-arrow-align-right x-button-secondary x-component-secondary x-layout-box-item x-layout-hbox-item" data-xid="65" id="FormPatientPayment_button_Back"><div class="x-inner-el" id="ext-element-190"><div class="x-body-el" id="ext-element-189"><div class="x-icon-el x-font-icon" id="ext-element-192"></div><div class="x-text-el" id="ext-element-191">Back</div>
+                              
+                              </div><div class="x-arrow-el x-font-icon"></div></div><div class="x-badge-el"></div><button  class="x-button-el" type="button" id="ext-element-188" aria-describedby="ext-element-191" data-componentid="FormPatientPayment_button_Back"></button></div>
+                                  <div  data-componentid="FormPatientPayment_button_Next" class="x-component x-button x-has-text action noprint x-icon-align-left x-arrow-align-right x-button-action x-component-action x-layout-box-item x-layout-hbox-item" data-xid="66" id="FormPatientPayment_button_Next">
+                                      <div class="x-inner-el" id="ext-element-195">
+                                          <div class="x-body-el" id="ext-element-194"><div class="x-icon-el x-font-icon" id="ext-element-197"></div>
+                                              <div class="x-text-el" id="ext-element-196">Back</div></div><div class="x-arrow-el x-font-icon"></div></div>
+                                      <div class="x-badge-el"></div><button on class="x-button-el" type="button" id="ext-element-193" aria-describedby="ext-element-196" data-componentid="FormPatientPayment_button_Next"></button>
+                                  </div>
+                      <div  data-componentid="FormPatientPayment_button_Next" class="  x-component x-button x-has-text action noprint x-icon-align-left x-arrow-align-right x-button-action x-component-action x-layout-box-item x-layout-hbox-item" data-xid="66" id="FormPatientPayment_button_Next" style="margin-top: 5px;">
+                                      <div class="x-inner-el" id="ext-element-195">
+                                          <div class="x-body-el" id="ext-element-194"><div class="x-icon-el x-font-icon" id="ext-element-197"></div>
+                                              <div class="x-text-el " id="ext-element-196">Print Receipt</div></div><div class="x-arrow-el x-font-icon"></div></div>
+                                      <div class="x-badge-el"></div><button on class="x-button-el" type="button" id="btnPrint" aria-describedby="ext-element-196" data-componentid="FormPatientPayment_button_Next"></button>
+                                  </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+         
+      </div>
+       <input type="submit" class="x-hidden-submit">
+          </form>
+  </div>
+<style>
+
+/* Style the counter cards */
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+padding: 16px;
+text-align: left;
+background-color: #FFFFFF;
+}
+</style>
+

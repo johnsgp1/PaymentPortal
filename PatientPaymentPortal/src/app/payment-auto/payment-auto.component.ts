@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-payment-auto',
   templateUrl: './payment-auto.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentAutoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
-
+  goToCustomerDetails(ev:any){
+   this.router.navigate([
+     '/home', { outlets: { Home:['Customer'] } }
+   ])
+  }
 }
